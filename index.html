@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="robots" content="none">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/492a56e143.js" crossorigin="anonymous"></script>
+    <title>LevelCar</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__navbar navbar container">
+            <div class="navbar__logo">
+                <a href="#" class="navbar__logo-link">
+                    <img src="images/logo.svg" alt="Логотип" class="navbar__logo-image">
+                </a>
+            </div>
+            <div class="navbar__icon">
+                <span></span>
+            </div>
+            <div class="navbar__wrapper">
+                <nav class="navbar__menu menu-navbar">
+                    <ul class="menu-navbar__list">
+                        <li class="menu-navbar__list-item"><a href="#">Автопарк</a></li>
+                        <li class="menu-navbar__list-item"><a href="#">Условия</a></li>
+                        <li class="menu-navbar__list-item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar__contacts contacts-navbar">
+                    <div class="contacts-navbar__social">
+                        <a href="#" class="contacts-navbar__social-link contacts-navbar__social-link_whatsapp"><img src="images/icons/whatsapp.svg" alt="Telegram"></a>
+                        <a href="#" class="contacts-navbar__social-link contacts-navbar__social-link_viber"><img src="images/icons/viber.svg" alt="Telegram"></a>
+                        <a href="#" class="contacts-navbar__social-link contacts-navbar__social-link_telegram"><img src="images/icons/telegram.svg" alt="Telegram"></a>
+                    </div>
+                    <div class="contacts-navbar__phone">
+                        <a href="#">+7 (000) 000-00-00</a>
+                        <span class="navbar__arrow"></span>
+                        <div class="navbar__submenu submenu-navbar">
+                            <div class="submenu-navbar__item submenu-navbar__item_1">
+                                <p>Основной</p>
+                                <a href="#">+7 (000) 000-00-00</a>
+                            </div>
+                            <div class="submenu-navbar__item submenu-navbar__item_2">
+                                <p>Мобильный</p>
+                                <a href="#">+7 (000) 000-00-00</a>
+                            </div>
+                            <div class="submenu-navbar__item submenu-navbar__item_3">
+                                <p>Режим работы</p>
+                                <p>Без выходных, 10:00 - 21:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__slider">
+            <div class="main__slider-slide main-slide">
+                <div class="container">
+                    <div class="main-slide__block">
+                        <p class="main-slide__block-text">Аренда премиальных автомобилей</p>
+                        <a href="#" class="main-slide__block-btn primary-btn">Каталог автомобилей</a>
+                    </div>
+                </div>
+                <img data-lazy="images/main-slider/slider-1.jpg" alt="Изображение первого слайда" class="main-slide__image">
+            </div>
+            <div class="main__slider-slide main-slide">
+                <div class="container">
+                    <div class="main-slide__block">
+                        <p class="main-slide__block-text">Прокат эксклюзивных и VIP-автомобилей</p>
+                        <a href="#" class="main-slide__block-btn primary-btn">Каталог автомобилей</a>
+                    </div>
+                </div>
+                <img data-lazy="images/main-slider/slider-2.jpg" alt="Изображение второго слайда" class="main-slide__image">
+            </div>
+        </section>
+        <section class="main__categories">
+            <div class="main__categories-title container">
+                <h2 class="gold-title">Категории автомобилей</h2>
+            </div>
+            <div class="main__categories-list list-categories block-list container">
+                <div class="list-categories__item item-list">
+                    <a href="#" class="list-categories__item-link item-list__link">
+                        <img src="images/categories/business.png" alt="Бизнес автомобили" class="list-categories__item-image item-list__image">
+                        <p class="list-categories__item-text item-list__text">Бизнес</p>
+                    </a>
+                </div>
+                <div class="list-categories__item item-list">
+                    <a href="#" class="list-categories__item-link item-list__link">
+                        <img src="images/categories/cabriolet.png" alt="Кабриолет автомобили" class="list-categories__item-image item-list__image">
+                        <p class="list-categories__item-text item-list__text">Кабриолет</p>
+                    </a>
+                </div>
+                <div class="list-categories__item item-list">
+                    <a href="#" class="list-categories__item-link item-list__link">
+                        <img src="images/categories/coupe.png" alt="Купе автомобили" class="list-categories__item-image item-list__image">
+                        <p class="list-categories__item-text item-list__text">Купе</p>
+                    </a>
+                </div>
+                <div class="list-categories__item item-list">
+                    <a href="#" class="list-categories__item-link item-list__link">
+                        <img src="images/categories/sportcar.png" alt="Спорткар автомобили" class="list-categories__item-image item-list__image">
+                        <p class="list-categories__item-text item-list__text">Спорткар</p>
+                    </a>
+                </div>
+                <div class="list-categories__item item-list">
+                    <a href="#" class="list-categories__item-link item-list__link">
+                        <img src="images/categories/premium.png" alt="Премиум автомобили" class="list-categories__item-image item-list__image">
+                        <p class="list-categories__item-text item-list__text">Премиум</p>
+                    </a>
+                </div>
+                <div class="list-categories__item item-list">
+                    <a href="#" class="list-categories__item-link item-list__link">
+                        <img src="images/categories/suv.png" alt="Внедорожники автомобили" class="list-categories__item-image item-list__image">
+                        <p class="list-categories__item-text item-list__text">Внедорожники</p>
+                    </a>
+                </div>
+                <div class="list-categories__item item-list">
+                    <a href="#" class="list-categories__item-link item-list__link">
+                        <img src="images/categories/comfort.png" alt="Комфорт автомобили" class="list-categories__item-image item-list__image">
+                        <p class="list-categories__item-text item-list__text">Комфорт</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="main__catalog">
+            <div class="main__catalog-business business-catalog block-catalog">
+                <div class="business-catalog__title container block-catalog__title">
+                    <h2 class="gold-title">Бизнес</h2>
+                    <a href="#" class="primary-btn">Все бизнес</a>
+                </div>
+                <div class="business-catalog__slider slider-business catalog-slider">
+                    <div class="slider-business__slide slide-business catalog-slide">
+                        <a href="#" class="slide-business__link catalog-slide__link">
+                            <div class="slide-business__text catalog-slide__text">
+                                <div class="slide-business__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-business__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-business__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/1.jpg" alt="автомобиль 1" class="slide-business__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-business__slide slide-business catalog-slide">
+                        <a href="#" class="slide-business__link catalog-slide__link">
+                            <div class="slide-business__text catalog-slide__text">
+                                <div class="slide-business__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-business__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-business__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/2.jpg" alt="автомобиль 1" class="slide-business__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-business__slide slide-business catalog-slide">
+                        <a href="#" class="slide-business__link catalog-slide__link">
+                            <div class="slide-business__text catalog-slide__text">
+                                <div class="slide-business__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-business__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-business__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/3.jpg" alt="автомобиль 1" class="slide-business__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-business__slide slide-business catalog-slide">
+                        <a href="#" class="slide-business__link catalog-slide__link">
+                            <div class="slide-business__text catalog-slide__text">
+                                <div class="slide-business__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-business__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-business__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/4.jpg" alt="автомобиль 1" class="slide-business__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-business__slide slide-business catalog-slide">
+                        <a href="#" class="slide-business__link catalog-slide__link">
+                            <div class="slide-business__text catalog-slide__text">
+                                <div class="slide-business__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-business__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-business__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/5.jpg" alt="автомобиль 1" class="slide-business__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-business__slide slide-business catalog-slide">
+                        <a href="#" class="slide-business__link catalog-slide__link">
+                            <div class="slide-business__text catalog-slide__text">
+                                <div class="slide-business__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-business__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-business__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/6.jpg" alt="автомобиль 1" class="slide-business__image catalog-slide__image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__catalog-cabriolet cabriolet-catalog block-catalog">
+                <div class="cabriolet-catalog__title container block-catalog__title">
+                    <h2 class="gold-title">Кабриолет</h2>
+                    <a href="#" class="primary-btn">Все кабриолет</a>
+                </div>
+                <div class="cabriolet-catalog__slider slider-cabriolet catalog-slider">
+                    <div class="slider-cabriolet__slide slide-cabriolet catalog-slide">
+                        <a href="#" class="slide-cabriolet__link catalog-slide__link">
+                            <div class="slide-cabriolet__text catalog-slide__text">
+                                <div class="slide-cabriolet__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-cabriolet__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-cabriolet__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/1.jpg" alt="автомобиль 1" class="slide-cabriolet__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-cabriolet__slide slide-cabriolet catalog-slide">
+                        <a href="#" class="slide-cabriolet__link catalog-slide__link">
+                            <div class="slide-cabriolet__text catalog-slide__text">
+                                <div class="slide-cabriolet__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-cabriolet__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-cabriolet__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/2.jpg" alt="автомобиль 1" class="slide-cabriolet__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-cabriolet__slide slide-cabriolet catalog-slide">
+                        <a href="#" class="slide-cabriolet__link catalog-slide__link">
+                            <div class="slide-cabriolet__text catalog-slide__text">
+                                <div class="slide-cabriolet__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-cabriolet__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-cabriolet__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/3.jpg" alt="автомобиль 1" class="slide-cabriolet__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-cabriolet__slide slide-cabriolet catalog-slide">
+                        <a href="#" class="slide-cabriolet__link catalog-slide__link">
+                            <div class="slide-cabriolet__text catalog-slide__text">
+                                <div class="slide-cabriolet__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-cabriolet__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-cabriolet__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/4.jpg" alt="автомобиль 1" class="slide-cabriolet__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-cabriolet__slide slide-cabriolet catalog-slide">
+                        <a href="#" class="slide-cabriolet__link catalog-slide__link">
+                            <div class="slide-cabriolet__text catalog-slide__text">
+                                <div class="slide-cabriolet__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-cabriolet__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-cabriolet__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/5.jpg" alt="автомобиль 1" class="slide-cabriolet__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-cabriolet__slide slide-cabriolet catalog-slide">
+                        <a href="#" class="slide-cabriolet__link catalog-slide__link">
+                            <div class="slide-cabriolet__text catalog-slide__text">
+                                <div class="slide-cabriolet__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-cabriolet__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-cabriolet__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/6.jpg" alt="автомобиль 1" class="slide-cabriolet__image catalog-slide__image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__catalog-coupe coupe-catalog block-catalog">
+                <div class="coupe-catalog__title container block-catalog__title">
+                    <h2 class="gold-title">Купе</h2>
+                    <a href="#" class="primary-btn">Все купе</a>
+                </div>
+                <div class="coupe-catalog__slider slider-coupe catalog-slider">
+                    <div class="slider-coupe__slide slide-coupe catalog-slide">
+                        <a href="#" class="slide-coupe__link catalog-slide__link">
+                            <div class="slide-coupe__text catalog-slide__text">
+                                <div class="slide-coupe__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-coupe__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-coupe__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/1.jpg" alt="автомобиль 1" class="slide-coupe__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-coupe__slide slide-coupe catalog-slide">
+                        <a href="#" class="slide-coupe__link catalog-slide__link">
+                            <div class="slide-coupe__text catalog-slide__text">
+                                <div class="slide-coupe__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-coupe__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-coupe__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/2.jpg" alt="автомобиль 1" class="slide-coupe__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-coupe__slide slide-coupe catalog-slide">
+                        <a href="#" class="slide-coupe__link catalog-slide__link">
+                            <div class="slide-coupe__text catalog-slide__text">
+                                <div class="slide-coupe__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-coupe__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-coupe__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/3.jpg" alt="автомобиль 1" class="slide-coupe__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-coupe__slide slide-coupe catalog-slide">
+                        <a href="#" class="slide-coupe__link catalog-slide__link">
+                            <div class="slide-coupe__text catalog-slide__text">
+                                <div class="slide-coupe__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-coupe__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-coupe__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/4.jpg" alt="автомобиль 1" class="slide-coupe__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-coupe__slide slide-coupe catalog-slide">
+                        <a href="#" class="slide-coupe__link catalog-slide__link">
+                            <div class="slide-coupe__text catalog-slide__text">
+                                <div class="slide-coupe__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-coupe__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-coupe__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/5.jpg" alt="автомобиль 1" class="slide-coupe__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-coupe__slide slide-coupe catalog-slide">
+                        <a href="#" class="slide-coupe__link catalog-slide__link">
+                            <div class="slide-coupe__text catalog-slide__text">
+                                <div class="slide-coupe__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-coupe__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-coupe__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/6.jpg" alt="автомобиль 1" class="slide-coupe__image catalog-slide__image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__catalog-sportcar sportcar-catalog block-catalog">
+                <div class="sportcar-catalog__title container block-catalog__title">
+                    <h2 class="gold-title">Спорткары</h2>
+                    <a href="#" class="primary-btn">Все спорткары</a>
+                </div>
+                <div class="sportcar-catalog__slider slider-sportcar catalog-slider">
+                    <div class="slider-sportcar__slide slide-sportcar catalog-slide">
+                        <a href="#" class="slide-sportcar__link catalog-slide__link">
+                            <div class="slide-sportcar__text catalog-slide__text">
+                                <div class="slide-sportcar__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-sportcar__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-sportcar__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/1.jpg" alt="автомобиль 1" class="slide-sportcar__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-sportcar__slide slide-sportcar catalog-slide">
+                        <a href="#" class="slide-sportcar__link catalog-slide__link">
+                            <div class="slide-sportcar__text catalog-slide__text">
+                                <div class="slide-sportcar__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-sportcar__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-sportcar__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/2.jpg" alt="автомобиль 1" class="slide-sportcar__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-sportcar__slide slide-sportcar catalog-slide">
+                        <a href="#" class="slide-sportcar__link catalog-slide__link">
+                            <div class="slide-sportcar__text catalog-slide__text">
+                                <div class="slide-sportcar__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-sportcar__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-sportcar__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/3.jpg" alt="автомобиль 1" class="slide-sportcar__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-sportcar__slide slide-sportcar catalog-slide">
+                        <a href="#" class="slide-sportcar__link catalog-slide__link">
+                            <div class="slide-sportcar__text catalog-slide__text">
+                                <div class="slide-sportcar__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-sportcar__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-sportcar__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/4.jpg" alt="автомобиль 1" class="slide-sportcar__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-sportcar__slide slide-sportcar catalog-slide">
+                        <a href="#" class="slide-sportcar__link catalog-slide__link">
+                            <div class="slide-sportcar__text catalog-slide__text">
+                                <div class="slide-sportcar__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-sportcar__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-sportcar__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/5.jpg" alt="автомобиль 1" class="slide-sportcar__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-sportcar__slide slide-sportcar catalog-slide">
+                        <a href="#" class="slide-sportcar__link catalog-slide__link">
+                            <div class="slide-sportcar__text catalog-slide__text">
+                                <div class="slide-sportcar__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-sportcar__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-sportcar__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/6.jpg" alt="автомобиль 1" class="slide-sportcar__image catalog-slide__image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__catalog-premium premium-catalog block-catalog">
+                <div class="premium-catalog__title container block-catalog__title">
+                    <h2 class="gold-title">Премиум</h2>
+                    <a href="#" class="primary-btn">Все премиум</a>
+                </div>
+                <div class="premium-catalog__slider slider-premium catalog-slider">
+                    <div class="slider-premium__slide slide-premium catalog-slide">
+                        <a href="#" class="slide-premium__link catalog-slide__link">
+                            <div class="slide-premium__text catalog-slide__text">
+                                <div class="slide-premium__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-premium__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-premium__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/1.jpg" alt="автомобиль 1" class="slide-premium__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-premium__slide slide-premium catalog-slide">
+                        <a href="#" class="slide-premium__link catalog-slide__link">
+                            <div class="slide-premium__text catalog-slide__text">
+                                <div class="slide-premium__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-premium__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-premium__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/2.jpg" alt="автомобиль 1" class="slide-premium__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-premium__slide slide-premium catalog-slide">
+                        <a href="#" class="slide-premium__link catalog-slide__link">
+                            <div class="slide-premium__text catalog-slide__text">
+                                <div class="slide-premium__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-premium__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-premium__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/3.jpg" alt="автомобиль 1" class="slide-premium__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-premium__slide slide-premium catalog-slide">
+                        <a href="#" class="slide-premium__link catalog-slide__link">
+                            <div class="slide-premium__text catalog-slide__text">
+                                <div class="slide-premium__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-premium__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-premium__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/4.jpg" alt="автомобиль 1" class="slide-premium__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-premium__slide slide-premium catalog-slide">
+                        <a href="#" class="slide-premium__link catalog-slide__link">
+                            <div class="slide-premium__text catalog-slide__text">
+                                <div class="slide-premium__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-premium__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-premium__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/5.jpg" alt="автомобиль 1" class="slide-premium__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-premium__slide slide-premium catalog-slide">
+                        <a href="#" class="slide-premium__link catalog-slide__link">
+                            <div class="slide-premium__text catalog-slide__text">
+                                <div class="slide-premium__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-premium__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-premium__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/6.jpg" alt="автомобиль 1" class="slide-premium__image catalog-slide__image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__catalog-suv suv-catalog block-catalog">
+                <div class="suv-catalog__title container block-catalog__title">
+                    <h2 class="gold-title">Внедорожники</h2>
+                    <a href="#" class="primary-btn">Все внедорожники</a>
+                </div>
+                <div class="suv-catalog__slider slider-suv catalog-slider">
+                    <div class="slider-suv__slide slide-suv catalog-slide">
+                        <a href="#" class="slide-suv__link catalog-slide__link">
+                            <div class="slide-suv__text catalog-slide__text">
+                                <div class="slide-suv__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-suv__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-suv__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/1.jpg" alt="автомобиль 1" class="slide-suv__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-suv__slide slide-suv catalog-slide">
+                        <a href="#" class="slide-suv__link catalog-slide__link">
+                            <div class="slide-suv__text catalog-slide__text">
+                                <div class="slide-suv__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-suv__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-suv__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/2.jpg" alt="автомобиль 1" class="slide-suv__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-suv__slide slide-suv catalog-slide">
+                        <a href="#" class="slide-suv__link catalog-slide__link">
+                            <div class="slide-suv__text catalog-slide__text">
+                                <div class="slide-suv__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-suv__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-suv__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/3.jpg" alt="автомобиль 1" class="slide-suv__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-suv__slide slide-suv catalog-slide">
+                        <a href="#" class="slide-suv__link catalog-slide__link">
+                            <div class="slide-suv__text catalog-slide__text">
+                                <div class="slide-suv__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-suv__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-suv__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/4.jpg" alt="автомобиль 1" class="slide-suv__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-suv__slide slide-suv catalog-slide">
+                        <a href="#" class="slide-suv__link catalog-slide__link">
+                            <div class="slide-suv__text catalog-slide__text">
+                                <div class="slide-suv__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-suv__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-suv__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/5.jpg" alt="автомобиль 1" class="slide-suv__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-suv__slide slide-suv catalog-slide">
+                        <a href="#" class="slide-suv__link catalog-slide__link">
+                            <div class="slide-suv__text catalog-slide__text">
+                                <div class="slide-suv__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-suv__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-suv__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/6.jpg" alt="автомобиль 1" class="slide-suv__image catalog-slide__image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__catalog-minivan minivan-catalog block-catalog">
+                <div class="minivan-catalog__title container block-catalog__title">
+                    <h2 class="gold-title">Минивены</h2>
+                    <a href="#" class="primary-btn">Все минивены</a>
+                </div>
+                <div class="minivan-catalog__slider slider-minivan catalog-slider">
+                    <div class="slider-minivan__slide slide-minivan catalog-slide">
+                        <a href="#" class="slide-minivan__link catalog-slide__link">
+                            <div class="slide-minivan__text catalog-slide__text">
+                                <div class="slide-minivan__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-minivan__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-minivan__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/1.jpg" alt="автомобиль 1" class="slide-minivan__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-minivan__slide slide-minivan catalog-slide">
+                        <a href="#" class="slide-minivan__link catalog-slide__link">
+                            <div class="slide-minivan__text catalog-slide__text">
+                                <div class="slide-minivan__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-minivan__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-minivan__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/2.jpg" alt="автомобиль 1" class="slide-minivan__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-minivan__slide slide-minivan catalog-slide">
+                        <a href="#" class="slide-minivan__link catalog-slide__link">
+                            <div class="slide-minivan__text catalog-slide__text">
+                                <div class="slide-minivan__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-minivan__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-minivan__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/3.jpg" alt="автомобиль 1" class="slide-minivan__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-minivan__slide slide-minivan catalog-slide">
+                        <a href="#" class="slide-minivan__link catalog-slide__link">
+                            <div class="slide-minivan__text catalog-slide__text">
+                                <div class="slide-minivan__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-minivan__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-minivan__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/4.jpg" alt="автомобиль 1" class="slide-minivan__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-minivan__slide slide-minivan catalog-slide">
+                        <a href="#" class="slide-minivan__link catalog-slide__link">
+                            <div class="slide-minivan__text catalog-slide__text">
+                                <div class="slide-minivan__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-minivan__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-minivan__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/5.jpg" alt="автомобиль 1" class="slide-minivan__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-minivan__slide slide-minivan catalog-slide">
+                        <a href="#" class="slide-minivan__link catalog-slide__link">
+                            <div class="slide-minivan__text catalog-slide__text">
+                                <div class="slide-minivan__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-minivan__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-minivan__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/6.jpg" alt="автомобиль 1" class="slide-minivan__image catalog-slide__image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__catalog-comfort comfort-catalog block-catalog">
+                <div class="comfort-catalog__title container block-catalog__title">
+                    <h2 class="gold-title">Комфорт</h2>
+                    <a href="#" class="primary-btn">Все комфорт</a>
+                </div>
+                <div class="comfort-catalog__slider slider-comfort catalog-slider">
+                    <div class="slider-comfort__slide slide-comfort catalog-slide">
+                        <a href="#" class="slide-comfort__link catalog-slide__link">
+                            <div class="slide-comfort__text catalog-slide__text">
+                                <div class="slide-comfort__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-comfort__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-comfort__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/1.jpg" alt="автомобиль 1" class="slide-comfort__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-comfort__slide slide-comfort catalog-slide">
+                        <a href="#" class="slide-comfort__link catalog-slide__link">
+                            <div class="slide-comfort__text catalog-slide__text">
+                                <div class="slide-comfort__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-comfort__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-comfort__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/2.jpg" alt="автомобиль 1" class="slide-comfort__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-comfort__slide slide-comfort catalog-slide">
+                        <a href="#" class="slide-comfort__link catalog-slide__link">
+                            <div class="slide-comfort__text catalog-slide__text">
+                                <div class="slide-comfort__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-comfort__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-comfort__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/4.jpg" alt="автомобиль 1" class="slide-comfort__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-comfort__slide slide-comfort catalog-slide">
+                        <a href="#" class="slide-comfort__link catalog-slide__link">
+                            <div class="slide-comfort__text catalog-slide__text">
+                                <div class="slide-comfort__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-comfort__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-comfort__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/4.jpg" alt="автомобиль 1" class="slide-comfort__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-comfort__slide slide-comfort catalog-slide">
+                        <a href="#" class="slide-comfort__link catalog-slide__link">
+                            <div class="slide-comfort__text catalog-slide__text">
+                                <div class="slide-comfort__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-comfort__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-comfort__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/5.jpg" alt="автомобиль 1" class="slide-comfort__image catalog-slide__image">
+                        </a>
+                    </div>
+                    <div class="slider-comfort__slide slide-comfort catalog-slide">
+                        <a href="#" class="slide-comfort__link catalog-slide__link">
+                            <div class="slide-comfort__text catalog-slide__text">
+                                <div class="slide-comfort__title catalog-slide__title">
+                                    <p>BMW 530d M-SPORT</p>
+                                </div>
+                                <div class="slide-comfort__description catalog-slide__description">
+                                    <p>249 л.с.</p>
+                                    <p>Полный</p>
+                                    <p>2019</p>
+                                    <p class="slide-comfort__price catalog-slide__price">11.200 &#8381;/сутки</p>
+                                </div>
+                            </div>
+                            <img data-lazy="images/catalog/business/6.jpg" alt="автомобиль 1" class="slide-comfort__image catalog-slide__image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__catalog-link">
+                <a href="#" class="primary-btn">Показать все автомобили</a>
+            </div>
+        </section>
+        <section class="main__clients container">
+            <div class="main__clients-title">
+                <h2 class="gold-title">Наши клиенты</h2>
+            </div>
+            <div class="main__clients-list list-clients">
+                <div class="list-clients__item">
+                    <img src="images/clients/1.png" alt="Клиент">
+                </div>
+                <div class="list-clients__item">
+                    <img src="images/clients/2.png" alt="Клиент">
+                </div>
+                <div class="list-clients__item">
+                    <img src="images/clients/3.png" alt="Клиент">
+                </div>
+            </div>
+        </section>
+        <section class="main__info container">
+            <div class="main__info-block block-info">
+                <h1 class="block-info__title gold-title">Аренда VIP авто в Казани</h1>
+                <p class="block-info__description">Для тех, кто знает цену подлинному комфорту, компания CARLOSON предлагает услугу проката ВИП автомобилей в Москве на самых привлекательных условиях!</p>
+                <p class="block-info__description">Уже сегодня мы предоставим вам все возможности для быстрого оформления аренды ВИП авто. Вы сможете:</p>
+                <ul class="block-info__list">
+                    <li>Выбрать марку престижного автомобиля по вашему желанию.</li>
+                    <li>Быстро оформить заявку и договор аренды ВИП авто в Москве.</li>
+                    <li>Получить все необходимые консультации по техническим и организационным вопросам, связанным с прокатом ВИП авто.</li>
+                </ul>
+            </div>
+            <div class="main__info-block block-info">
+                <h2 class="block-info__title gold-title">Наш автопарк</h2>
+                <p class="block-info__description">Собственный автопарк CARLoson представлен коллекцией элитных автомобилей. Вы можете оформить услугу проката авто люкс класса за считанные минуты и уже в течение часа оказаться за рулем одного из наших красавцев.</p>
+            </div>
+            <div class="main__info-block block-info">
+                <h2 class="block-info__title gold-title">Точность – вежливость королей</h2>
+                <p class="block-info__description">Четкая координация и организация рабочего процесса позволяет нам гарантировать безупречное выполнение своих обязательств. Заказывая услугу проката авто люкс с водителем в компании CARLoson, Вы можете быть абсолютно уверены:</p>
+                <ul class="block-info__list">
+                    <li>Автомобиль будет подан минута в минуту;</li>
+                    <li>Вынужденные задержки в пути будут сведены к минимуму;</li>
+                    <li>Ваше путешествие или деловая поездка будет предельно комфортной, безопасной и увлекательной.</li>
+                </ul>
+                <p class="block-info__description">Заказать прокат автомобилей люкс-класса в Москве и проконсультироваться по любым интересующим вас вопросам можно по телефону <span class="nowrap-text">+7 (000) 000-00-00</span>.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__block block-footer">
+            <div class="container">
+                <div class="block-footer__main">
+                    <a href="#" class="block-footer__main-logo"><img src="images/logo.svg" alt="Логотип"></a>
+                    <p class="block-footer__main-description">Аренда премиальных автомобилей по Казани и республике Татарстан</p>
+                    <a href="#" class="block-footer__main-btn primary-btn">Написать директору</a>
+                </div>
+                <div class="block-footer__sections">
+                    <p class="block-footer__sections-title block-footer__title">Разделы</p>
+                    <ul class="block-footer__sections-list">
+                        <li class="block-footer__sections-item"><a href="#">Автопарк</a></li>
+                        <li class="block-footer__sections-item"><a href="#">Цены</a></li>
+                        <li class="block-footer__sections-item"><a href="#">Услуги</a></li>
+                        <li class="block-footer__sections-item"><a href="#">Условия</a></li>
+                        <li class="block-footer__sections-item"><a href="#">Клиентам</a></li>
+                        <li class="block-footer__sections-item"><a href="#">Конакты</a></li>
+                    </ul>
+                </div>
+                <div class="block-footer__contacts">
+                    <p class="block-footer__contacts-title block-footer__title">Контакты</p>
+                    <div class="block-footer__contacts-block block-contacts">
+                        <div class="block-contacts__item">
+                            <p class="block-contacts__item-title">Телефон</p>
+                            <a href="#" class="block-contacts__item-link">+7 (000) 000-00-00</a>
+                        </div>
+                        <div class="block-contacts__item">
+                            <p class="block-contacts__item-title">Адрес</p>
+                            <p class="block-contacts__item-description">Кутузовский проспект., д.2/1, гостиница «Украина»</p>
+                        </div>
+                        <div class="block-contacts__item">
+                            <p class="block-contacts__item-title">Режим работы</p>
+                            <p class="block-contacts__item-description">Без выходных, 10:00 - 21:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-footer__connection block-connection">
+                    <div class="block-connection__block">
+                        <p class="block-connection__title block-footer__title">Мы всегда на связи</p>
+                        <div class="block-connection__list">
+                            <a href="#" class="block-connection__link block-connection__link_wtsp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+                            <a href="#" class="block-connection__link block-connection__link_vbr"><i class="fa-brands fa-viber"></i><span>Viber</span></a>
+                            <a href="#" class="block-connection__link block-connection__link_tlgr"><i class="fa-solid fa-paper-plane"></i><span>Telegram</span></a>
+                        </div>
+                    </div>
+                    <div class="block-connection__block">
+                        <p class="block-connection__title block-footer__title">Присоединяйтесь к нам</p>
+                        <div class="block-connection__list">
+                            <a href="#" class="block-connection__link block-connection__link_vk"><i class="fa-brands fa-vk"></i><span>Vkontakte</span></a>
+                            <a href="#" class="block-connection__link block-connection__link_fb"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a>
+                            <a href="#" class="block-connection__link block-connection__link_inst"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+                            <a href="#" class="block-connection__link block-connection__link_ytb"><i class="fa-brands fa-youtube"></i><span>Instagram</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright container">
+            <p>&copy; 2022. level. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
